@@ -5,8 +5,159 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="header-index">
+      <h1 class="logo"><a href="#"><img src="" alt="Логотип интернет-магазина Device"></a></h1>
+      <div class="header_user-menu">
+        <div class="header_search">
+          <!-- Значек Лупы вставляется с помощью background для input, или при помощи label for, но тогда в IE до версии 8.0 включительно при клике на картинку поле ввода не будет активироваться.
+          Вместо type="search" возможно следует указать type="text"-->
+          <input class="search_input" type="search" placeholder="   Поиск по сайту">
+          <input class="search_button" type="button" name="search" value="Найти">
+        </div>
+        <a class="login_link" href="#">Вход</a>
+        <nav class="navigation_user">
+          <ul class="navigation_user_list">
+            <li class="navigation_user_compare"><a href="#">   Сравнить</a></li>
+            <li class="navigation_user_basket"><a href="#">   Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="navigation_menu">
+        <ul class="navigation_menu_list">
+          <li class="catalog_link"><a href="catalog.html">Каталог товаров   </a></li>
+          <li class="navigation_menu-list"><a href="#">Доставка</a></li>
+          <li class="navigation_menu-list"><a href="#">Гарантия</a></li>
+          <li class="navigation_menu-list"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <section class="main_slider">
+        <h2 class="visually-hidden">Слайдер с новинками интернет-магазина</h2>
+        <div class="slider_image">
+          <img class="slider_image-quadrocopter" src="" alt="Квадрокоптер с лазером, замаскированным под камеру" >
+          <button class="slider_button slider_prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+        <ol class="slider_properties">
+          <li class="slider_item">
+            <div class="slider_item-quadrocopter">
+              <p class="quadrocopter-promo">Порхает как бабочка, жалит как пчела!</p>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            </div>
+            <div>
+              <a class="slider_item-quadrocopter_more" href="#">Подробнее</a>
+              <button class="slider_button slider_button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </div>
+            <div>
+              <b>800 м</b>
+              <span>Дальность полёта</span>
+            </div>
+            <div>
+              <b>50 м</b>
+              <span>Радиус поражения</span>
+            </div>
+          </li>
+          <li class="slider_item">
+            <div class="slider_item-next">
+              <a class="slider_item-next_more" href="#">Подробнее</a>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+              <button class="slider_button slider_button-current" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </div>
+          </li>
+          <li class="slider_item">
+            <div class="slider_item-last">
+              <a class="slider_item-last_more" href="#">Подробнее</a>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+              <button class="slider_button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+              <button class="slider_button slider_button-current" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <section class="category_list">
+        <h2 class="visually-hidden">Категории товаров из каталога</h2>
+        <ul>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок очков виртуальной реальности"><span>Виртуальная реальность</span></a>
+          </li>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок монопода"><span>Моноподы для селфи</span></a>
+          </li>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок экшн-камеры"><span>Экшн-камеры</span></a>
+          </li>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок фитнес-браслета"><span>Фитнес-браслеты</span></a>
+          </li>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок часов"><span>Умные часы</span></a>
+          </li>
+          <li class="category_list_virtual-reality">
+            <a href="#"><img src="" alt="Схематичный рисунок квадрокоптера"><span>Квадрокоптеры</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="benefits">
+        <h2 class="visually hidden">Наши преимущества</h2>
+        <ul class="benefits_list">
+          <li class="benefits_list-delivery">
+            <button class="benefits_button benefits_button_current" type="button">Доставка</button>
+          </li>
+          <li class="benefits_list-guarantee">
+            <button class="benefits_button" type="button">Гарантия</button>
+          </li>
+          <li class="benefits_list-credit">
+            <button class="benefits_button" type="button">Кредит</button>
+          </li>
+        </ul>
+        <span>Доставка</span>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </section>
+      <span>Доставим редкий товар под заказ</span>
+      <section class="about-shop">
+        <h2 class="visualy-hiden">Информация о магазине и контакты</h2>
+        <div class="about-shop_about-us">
+          <h3 class="about-us">О нас</h3>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <dl>
+            <dt>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</dt>
+            <dd>Меловые линии</dd>
+            <dd>СДИК</dd>
+            <dd>ТоксБерри</dd>
+          </dl>
+          <a href="">Подробнее о нас</a>
+        </div>
+        <div class="about-shop_contacts">
+          <h3 class="contacts">Контакты</h3>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
