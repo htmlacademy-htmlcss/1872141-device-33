@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+}
+/* Вижу, что можно объединить  селекторы по классу button и link,
+но пока этого не делаю, чтобы не запутаться*/
+.button {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.link {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header_page {
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.search_input {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search_button {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.log_in {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: none;
+}
+/* Это сделал просто для пробы.*/
+.log_in::before {
+  content: url('../images/icon/icon_login.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.log_out {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: none;
+}
+
+.navigation_user {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 30px;
+  text-transform: none;
+}
+
+.navigation_menu_list {
+  text-transform: uppercase;
+}
+
+.main_inner {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+.slider_number {
+  font-weight: 700;
+  font-size: 180px;
+  color: #ffffff;
+  background-color: #FFE17F;
+}
+
+.slider_promo {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slider_link_more {
+  text-transform: uppercase;
+}
+
+.slider_property_list dt{
+  font-size: 36px;
+}
+
+.slider_property_list dd{
+  font-size: 16px;
+}
+
+.category_link {
+  line-height: 24px;
+  text-transform: none;
+}
+
+h3 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.delivery_container {
+  width: 1160px;
+  height: 100px;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.delivery {
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.about-shop_about-us dd {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.about-shop_contacts h4 {
+  font-size: 24px;
+
+}
+
+.contacts_address_text {
+  font-style: normal;
+}
+
+.contacts_phone {
+  color: #000000;
+  background-color: #ffffff;
+  font-style: normal;
+}
+
+.mailing-list h2 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.e-mail_input {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.footer_page {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.footer_link {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.footer_phone {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.inner_header h1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.bread-crumbs_link {
+  text-decoration: none;
+}
+
+.filter h2 {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.filter_group_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.select_container h2{
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.select_control {
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.product_page_monopod {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.product_card_title {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product_card_price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pagination_show-more_container {
+  width: 760px;
+  height: 55px;
+  text-align: center;
+}
+
+.pagination_show-more {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.pagination_list span {
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.pagination_link {
+  line-height: 20px;
+  text-decoration: none;
+}

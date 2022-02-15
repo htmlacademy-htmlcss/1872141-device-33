@@ -3,30 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header_page">
-      <a class="logo" href="index.html"><img src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
+      <a class="link logo" href="index.html"><img src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
       <ul class="header_user_menu">
         <li class="header_search">
           <form class="header_search_container" action="https://echo.htmlacademy.ru/">
-            <input type="search" id="search_input" placeholder="Поиск по сайту">
-            <button class="search_button" type="submit">Найти</button>
+            <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
+            <button class="button search_button" type="submit">Найти</button>
           </form>
         </li>
-        <li><a class="user_login" href="#">Коля Петухов</a></li>
-        <li><a class="log_out" href="#">Выход</a></li>
+        <li><a class="link log_in" href="#">Коля Петухов</a></li>
+        <li><a class="link log_out" href="#">Выход</a></li>
       </ul>
-      <ul class="navigation_user">
-        <li class="navigation_user_compare"><a href="#">Сравнить</a></li>
-        <li class="navigation_user_basket"><a href="#">Корзина</a></li>
+      <ul class="navigation_user_list">
+        <li class="navigation_user_compare"><a class="link navigation_user" href="#">Сравнить</a></li>
+        <li class="navigation_user_basket"><a class="link navigation_user" href="#">Корзина</a></li>
       </ul>
       <nav class="navigation_menu">
         <ul class="navigation_menu_list">
-          <li class="catalog_link"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="navigation_menu_list"><a href="#">Доставка</a></li>
-          <li class="navigation_menu_list"><a href="#">Гарантия</a></li>
-          <li class="navigation_menu_list"><a href="#">Контакты</a></li>
+          <li class="catalog_link"><a class="link" href="catalog.html">Каталог товаров</a></li>
+          <li class="navigation_menu_list"><a class="link" href="#">Доставка</a></li>
+          <li class="navigation_menu_list"><a class="link" href="#">Гарантия</a></li>
+          <li class="navigation_menu_list"><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -34,15 +35,18 @@
       <header class="inner_header">
         <h1>Моноподы для селфи</h1>
         <ul class="bread-crumbs_list">
-          <li class="bread-crumbs_element"><a href="index.html">Главная</a></li>
-          <li class="bread-crumbs_element"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="bread-crumbs_element"><a>Моноподы для селфи</a></li>
+          <li class="bread-crumbs_element"><a class="bread-crumbs_link" href="index.html">Главная</a></li>
+          <li class="bread-crumbs_element"><a class="bread-crumbs_link" href="catalog.html">Каталог товаров</a></li>
+          <li class="bread-crumbs_element"><a class="bread-crumbs_link" href="#">Моноподы для селфи</a></li>
         </ul>
       </header>
 
         <section class="filter">
           <h2>фильтр:</h2>
           <form action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter_group">
+              <legend class="filter_group_title">Стоимость</legend>
+            </fieldset>
             <fieldset class="filter_group">
               <legend class="filter_group_title">Цвет</legend>
               <ul class="filter_group_list">
@@ -95,20 +99,20 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter_button" type="submit">Показать</button>
+            <button class="button" type="submit">Показать</button>
           </form>
         </section>
         <div class="select_container">
           <h2>сортировка:</h2>
           <select class="select_control" aria-label="Сортировка">
-            <option value="popular">Популярные</option>
-            <option value="cheap">Дешёвые</option>
-            <option value="expensive">Дорогие</option>
+            <option class="select_value" value="popular">Популярные</option>
+            <option class="select_value" value="cheap">Дешёвые</option>
+            <option class="select_value" value="expensive">Дорогие</option>
           </select>
           <a class="visually-hidden" href="#">Прямой вариант сортировки</a>
           <a class="visually-hidden" href="#">Обратный вариант сортировки</a>
         </div>
-      <section class="product-page_monopod">
+      <section class="product_page_monopod">
         <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
         <ul class="product_monopod_list">
           <li class="product_monopod_card">
@@ -140,7 +144,9 @@
             <span class="product_card_price">1 500 ₽</span>
           </li>
         </ul>
-        <button class="pagination_button_show-more" type="button">Загрузить ещё</button>
+        <div class="pagination_show-more_container">
+          <button class="pagination_show-more" type="button">Загрузить ещё</button>
+        </div>
         <ul class="pagination_list">
           <li class="pagination_item">
             <a class="pagination_link pagination_prev pagination_disabled">
@@ -172,38 +178,38 @@
     </main>
     <footer class="footer_page">
       <section class="footer_address">
-        <h2 class="footer_logo"><a href="index.html"><img src="images/logo_device_footer.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a></h2>
-        <address class="footer_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        <h2 class="footer_logo"><a href="#"><img src="images/logo_device_footer.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a></h2>
+        <address class="contacts_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
       </section>
       <nav class="footer_navigation">
         <ul class="footer_navigation_list">
-          <li class="footer_nav_list"><a href="#">Доставка</a></li>
-          <li class="footer_nav_list"><a href="#">Гарантия</a></li>
-          <li class="footer_nav_list"><a href="#">Контакты</a></li>
+          <li class="footer_nav_list"><a class="link footer_link" href="#">Доставка</a></li>
+          <li class="footer_nav_list"><a class="link footer_link" href="#">Гарантия</a></li>
+          <li class="footer_nav_list"><a class="link footer_link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <section class="footer_social">
         <h2 class="visually-hidden">Мы с социальных сетях</h2>
         <ul class="footer_social_list">
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="link" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="link" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="footer_social_item">
-            <a class="button" href="#">
+            <a class="link" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
       </section>
       <div class="footer_other">
-        <a class="footer_phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer_phone contacts_phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="htmlacademy_link" href="https://htmlacademy.ru/"><img src="images/logo_html-academy.svg" width="115" height="33" alt="Логотип html-academy."></a>
       </div>
     </footer>
