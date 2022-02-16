@@ -29,8 +29,7 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-/* Вижу, что можно объединить  селекторы по классу button и link,
-но пока этого не делаю, чтобы не запутаться*/
+
 .button {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -72,12 +71,6 @@ body {
   font-weight: inherit;
   line-height: inherit;
   text-transform: none;
-}
-/* Это сделал просто для пробы.*/
-.log_in::before {
-  content: url('../images/icon/icon_login.svg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .log_out {
@@ -137,7 +130,7 @@ body {
   text-transform: none;
 }
 
-h3 {
+.benefits_list h3 {
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
