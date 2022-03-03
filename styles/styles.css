@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -48,14 +56,41 @@ body {
 }
 
 .header_page {
+  width: 1160px;
   color: #000000;
   background-color: #FFE17F;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.logo {
+  margin-left: 60px;
+}
+
+.header_user_container {
+  display: flex;
+  width: 1040px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header_user_menu {
+  padding: 0;
+}
+
+.header_search_container {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .search_input {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  width: 359px;
+  padding: 0;
 }
 
 .search_button {
@@ -64,6 +99,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
+  width: 160px;
+  padding: 0;
 }
 
 .log_in {
@@ -71,6 +108,7 @@ body {
   font-weight: inherit;
   line-height: inherit;
   text-transform: none;
+  flex-grow: 1;
 }
 
 .log_out {
@@ -80,15 +118,37 @@ body {
   text-transform: none;
 }
 
+.navigation_user_list {
+  display: flex;
+  width: 241px;
+  justify-content: space-between;
+  padding: 0;
+}
+
 .navigation_user {
   font-family: inherit;
   font-weight: inherit;
   line-height: 30px;
-  text-transform: none;
+}
+
+.navigation_menu {
+  text-transform: uppercase;
+  display: flex;
+  width: 1040px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .navigation_menu_list {
-  text-transform: uppercase;
+  display: flex;
+  width: 471px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.main_page {
+  flex-grow: 1;
 }
 
 .main_inner {
@@ -97,6 +157,13 @@ body {
   line-height: 19px;
   color: #000000;
   background-color: #f0f0f0;
+}
+
+.slider_item {
+  display: flex;
+  align-items: flex-end;
+  width: 1111px;
+  margin: 0 auto;
 }
 
 .slider_number {
@@ -125,9 +192,40 @@ body {
   font-size: 16px;
 }
 
+.category_list {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.category_list_item {
+  width: 160px;
+}
+
 .category_link {
   line-height: 24px;
   text-transform: none;
+}
+
+.benefits {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.benefits_buttons {
+  width: 280px;
+}
+
+.benefits_buttons button {
+  width: 160px;
+}
+ /* Следующее свойство просто для пробы...*/
+.benefits_list {
+  list-style-type: none;
 }
 
 .benefits_list h3 {
@@ -137,17 +235,46 @@ body {
   line-height: 50px;
 }
 
+.benefits_list li {
+  width: 448px;
+}
+
 .delivery_container {
+  display: flex;
   width: 1160px;
   height: 100px;
   font-size: 20px;
   background-color: #f0f0f0;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .delivery {
   line-height: 23px;
   text-transform: uppercase;
+}
+
+.about-shop {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.about-shop h3 {
+  font-family: 'raleway';
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.about-shop_about-us {
+  width: 520px;
+}
+
+.about-shop_contacts {
+  width: 532px;
 }
 
 .about-shop_about-us dd {
@@ -170,11 +297,25 @@ body {
   font-style: normal;
 }
 
+.mailing-list_container {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .mailing-list h2 {
   font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  width: 348px;
+  margin-left: 147px;
+  margin-right: 252px;
+}
+
+.mailing-list p {
+  width: 560px;
 }
 
 .e-mail_input {
@@ -186,6 +327,15 @@ body {
 .footer_page {
   color: #ffffff;
   background-color: #444444;
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 140px;
+  justify-content: space-between;
+}
+
+.footer_address {
+  width: 234px;
 }
 
 .footer_link {
@@ -193,9 +343,27 @@ body {
   background-color: #444444;
 }
 
+.footer_navigation_list {
+  display: flex;
+  width: 444px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.footer_other {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .footer_phone {
   color: #ffffff;
   background-color: #444444;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .inner_header h1 {
