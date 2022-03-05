@@ -9,14 +9,10 @@
     <header class="header_page">
       <a class="link logo" href="#"><img src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
       <div class="header_user_container">
-        <ul class="header_user_menu">
-          <li class="header_search">
-            <form class="header_search_container" action="https://echo.htmlacademy.ru/">
-              <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
-              <button class="button search_button" type="submit">Найти</button>
-            </form>
-          </li>
-        </ul>
+        <form class="header_search_container" action="https://echo.htmlacademy.ru/">
+          <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
+          <button class="button search_button" type="submit">Найти</button>
+        </form>
         <a class="link log_in" href="#">Войти</a>
         <ul class="navigation_user_list">
           <li class="navigation_user_compare"><a class="link navigation_user" href="#">Сравнить</a></li>
@@ -55,26 +51,20 @@
         </div>
         <ol class="slider_properties">
           <li class="slider_item">
-            <!--
-              Стрелки переключения слайдера должны быть частью слайда,
-              но как их впихнуть, сохранив размер картинки не разобрался.
-              Слайд накладывать фоном? Так же не понял,
-              как сделать отступ до кнопки/стрелки "Предыдущее фото" 30px, а между кнопкой/стрелкой
-              "Следующее фото" отступ 40 px. Прописывать margin-left/margin-right для кнопок?
-            -->
+            <!-- Вёрстка стрелок отложена, т.к. он будет рассмотрен в программе обучения
+                   позже, а на данном этапе мешает правильно отобразить размеры слайда.
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <img class="slider_image_quadrocopter" src="images/slider/slider_1.png" width="560" height="560" alt="Квадрокоптер с лазером, замаскированным под камеру." >
               <button class="slider_button slider-next" type="button">
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
-            <!--
-              Я не понимаю как номер слайдера впихать в разметку, т.к. он портит у меня все флексы,
-               а разбор вёрстки слайдера будет позже.
-
+            -->
+            <img class="slider_image_quadrocopter" src="images/slider/slider_1.png" width="560" height="560" alt="Квадрокоптер с лазером, замаскированным под камеру." >
+            <!-- Вёрстка номера отложена, т.к. это декоративный элемент и будет рассмотрен
+              в программе обучения позже.
             <span class="slider_number">01</span>
             -->
             <div class="slider_item_description_container">
@@ -83,7 +73,7 @@
                 <p class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               </div>
               <a class="link slider_link_more" href="#">Подробнее</a>
-              <dl class="slider_property_list">
+              <dl class="slider_properties_list">
                 <dt>800 м</dt>
                 <dd>Дальность полёта</dd>
                 <dt>50 м</dt>
@@ -91,11 +81,8 @@
               </dl>
             </div>
           </li>
-          <!--
-            Остальные слайды "закомментил" временно, чтобы не допустить однотипные ошибки.
-            Когда вёрстка первого слайда будет верной, их сверсаю по подобию
-
           <li class="slider_item">
+            <!--
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -104,19 +91,25 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
+            -->
             <img class="slider_image_fitness-bracelet" src="images/slider/slider_2.png" width="560" height="560" alt="Мотивирующий фитнес-браслет черного цвета." >
+            <!--
             <span class="slider_number">02</span>
-            <div class="slider_item_fitness-bracelet">
-              <p class="slider_promo">Худеем правильно!</p>
-              <p class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            -->
+            <div class="slider_item_description_container">
+              <div class="slider_item_fitness-bracelet">
+                <p class="slider_promo">Худеем правильно!</p>
+                <p class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              </div>
+              <a class="link slider_link_more" href="#">Подробнее</a>
+              <dl class="slider_properties_list">
+                <dt>48 часов</dt>
+                <dd>Без подзарядки</dd>
+             </dl>
             </div>
-            <a class="link slider_link_more" href="#">Подробнее</a>
-            <dl class="slider_property_list">
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
           </li>
           <li class="slider_item">
+            <!--
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -125,23 +118,27 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
+            -->
             <img class="slider_image_selfie-stick" src="images/slider/slider_3.png" width="560" height="560" alt="Чёрная телескопическая палка для селфи с ремешком." >
+            <!--
             <span class="slider_number">03</span>
-            <div class="slider_item_selfie-stick">
-              <p class="slider_promo">Делай селфи, как Бен Стиллер!</p>
-              <p class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            -->
+            <div class="slider_item_description_container">
+              <div class="slider_item_selfie-stick">
+                <p class="slider_promo">Делай селфи, как Бен Стиллер!</p>
+                <p class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              </div>
+              <a class="link slider_link_more" href="#">Подробнее</a>
+              <dl class="slider_properties_list">
+                <dt>8,5 м</dt>
+                <dd>Длина палки</dd>
+                <dt>5 кг</dt>
+                <dd>Вес палки</dd>
+                <dt>Карбон</dt>
+                <dd>Материал</dd>
+              </dl>
             </div>
-            <a class="link slider_link_more" href="#">Подробнее</a>
-            <dl class="slider_property_list">
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
           </li>
-          -->
         </ol>
       </section>
       <section>
@@ -179,9 +176,6 @@
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <!--
-            Аналогично слайдеру...
-
           <li class="benefits_list_guarantee">
             <h3>Гарантия</h3>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
@@ -190,7 +184,6 @@
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
-          -->
         </ol>
       </section>
       <div class="delivery_container">
@@ -230,16 +223,11 @@
           <h2>Подпишитесь на рассылку</h2>
           <!--
             Не могу понять, почему размер контейнера для тэга p и все свойства шрифта совпадают с макетом,
-            а при запуске сайта в браузере перенос строк в тексте не совпадает с макетом.
+            а при запуске сайта в браузере перенос строк в тексте не совпадает с макетом. Это из-за межсимвольного
+             интервала - Letter-spacing?
           -->
           <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
-        <!--
-          Тут display: flex надо применять для класса mailing-list и форма для e-mail так же является частью
-          сетки, но построение таких сеток рассматривается позже. Поэтому пока в сетку из флексов взято только
-          2 элемента. Поэтой же причине не выполнил центровку формы. Или в равках урока надо задать ей
-           отдельно свойство display: flex?
-        -->
         <form class="mailing-list_form" action="https://echo.htmlacademy.ru/">
           <input class="e-mail_input" type="email" placeholder="Ваш e-mail">
           <button class="button email_button" type="submit">Подписаться</button>
