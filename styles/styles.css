@@ -62,12 +62,13 @@ body {
   margin: 0 auto;
   margin-top: 40px;
   padding: 0 60px;
+  position: relative;
+
 }
 
 .header_user_container {
   display: flex;
   width: 1040px;
-  justify-content: space-between;
   margin: 0 auto;
   align-items: center;
 }
@@ -75,7 +76,9 @@ body {
 .header_search_container {
   display: flex;
   margin: 0;
+  margin-right: 52px;
   padding: 0;
+  width: 517px;
 }
 
 .search_input {
@@ -121,6 +124,7 @@ body {
 .navigation_user_list {
   display: flex;
   width: 241px;
+  margin-left: 175px;
   justify-content: space-between;
   padding: 0;
 }
@@ -161,8 +165,13 @@ body {
 
 .main_page {
   flex-grow: 1;
-  width: 1160px;
+  width: 100%;
   margin: 0 auto;
+}
+
+.main_slider {
+  width: 1160px;
+  margin: auto;
 }
 
 .slider_properties {
@@ -312,12 +321,15 @@ body {
   font-style: normal;
 }
 
+.mailing-list_background {
+  background-color: #f0f0f0;
+}
+
 .mailing-list {
   display: flex;
   width: 1160px;
   flex-direction: column;
   margin: 0 auto;
-  align-items: center;
 }
 
 .mailing-list_container {
@@ -330,7 +342,6 @@ body {
   font-size: 50px;
   line-height: 50px;
   width: 348px;
-  margin-left: 147px;
   margin-right: 252px;
 }
 
@@ -338,10 +349,26 @@ body {
   width: 560px;
 }
 
+.mailing-list_form {
+  width: 1160px;
+  padding: 0;
+}
+
 .e-mail_input {
   font-family: "rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  width: 557px;
+  padding: 0;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.email_button {
+  width: 247px;
+  margin-right: 200px;
+  padding: 0;
+  border: 3px solid #cecece;
 }
 
 .footer_page {

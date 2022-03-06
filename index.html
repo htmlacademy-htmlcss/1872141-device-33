@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="header_page">
-      <a class="link logo" href="#"><img src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
+      <a class="link logo" href="#"><img class="logo_image" src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
       <div class="header_user_container">
         <form class="header_search_container" action="https://echo.htmlacademy.ru/">
           <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
@@ -141,7 +141,7 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="category_list_container">
         <h2 class="visually-hidden" hidden>Категории товаров из каталога</h2>
         <ul class="category_list">
           <li class="category_list_item">
@@ -218,22 +218,24 @@
           <a class="link" href="">Напишите нам</a>
         </div>
       </section>
-      <aside class="mailing-list">
-        <div class="mailing-list_container">
-          <h2>Подпишитесь на рассылку</h2>
-          <!--
-            Не могу понять, почему размер контейнера для тэга p и все свойства шрифта совпадают с макетом,
-            а при запуске сайта в браузере перенос строк в тексте не совпадает с макетом. Это из-за межсимвольного
-             интервала - Letter-spacing?
-          -->
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <aside class="mailing-list_background">
+        <div class="mailing-list">
+          <div class="mailing-list_container">
+            <h2>Подпишитесь на рассылку</h2>
+            <!--
+              Не могу понять, почему размер контейнера для тэга p и все свойства шрифта совпадают с макетом,
+              а при запуске сайта в браузере перенос строк в тексте не совпадает с макетом. Это из-за межсимвольного
+              интервала - Letter-spacing?
+            -->
+            <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <form class="mailing-list_form" action="https://echo.htmlacademy.ru/">
+            <input class="e-mail_input" type="email" placeholder="Ваш e-mail">
+            <button class="button email_button" type="submit">Подписаться</button>
+            <span>Это бесплатно</span>
+          </form>
         </div>
-        <form class="mailing-list_form" action="https://echo.htmlacademy.ru/">
-          <input class="e-mail_input" type="email" placeholder="Ваш e-mail">
-          <button class="button email_button" type="submit">Подписаться</button>
-          <span>Это бесплатно</span>
-        </form>
-      </aside>
+       </aside>
     </main>
     <footer class="footer_page">
       <div class="footer_page_container">
