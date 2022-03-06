@@ -165,18 +165,6 @@ body {
   margin: 0 auto;
 }
 
-.main_inner {
-  font-family: "rubik", sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  background-color: #f0f0f0;
-  flex-grow: 1;
-  margin: 0 auto;
-  width: 1040px;
-  padding: 0 140px;
-}
-
 .slider_properties {
   padding: 0;
 }
@@ -359,15 +347,23 @@ body {
 .footer_page {
   color: #ffffff;
   background-color: #444444;
+  width: 100%;
+}
+
+.footer_page_container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  padding: 0 140px;
-  justify-content: space-between;
 }
 
 .footer_address {
-  width: 234px;
+  min-width: 234px;
+  margin-right: 117px;
+}
+
+.footer_navigation-social_container {
+  width: 444px;
+  margin-right: 190px;
 }
 
 .footer_link {
@@ -378,15 +374,28 @@ body {
 .footer_navigation_list {
   display: flex;
   width: 444px;
-  margin: 0 auto;
   justify-content: space-between;
   padding: 0;
+  margin-right: 190px;
+}
+
+.footer_nav_list {
+  width: 125px;
+  margin-right: 35px;
+}
+
+.footer_navigation_list li:last-child {
+  margin-right: 0;
+}
+
+.footer_social {
+  width: 150px;
 }
 
 .footer_other {
   display: flex;
   flex-direction: column;
-  width: 175px;
+  min-width: 175px;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -396,6 +405,24 @@ body {
   background-color: #444444;
   font-size: 16px;
   line-height: 20px;
+}
+
+.main_inner {
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background-color: #ffffff;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.inner_header {
+  width: 1040px;
+  padding: 0 60px;
+  margin: auto;
 }
 
 .inner_header h1 {
@@ -418,9 +445,16 @@ body {
   text-decoration: none;
 }
 
+.product_background_container {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
 .product_page_container {
   display: flex;
+  justify-content: space-between;
   width: 1040px;
+  margin: auto;
 }
  /* Мне кажется, что в макете ошибка, т.к. размер блока для элемента 'фильтр:' указана 273px,
  а для общего флексбокса (в который входят 'Стоимость', 'Цвет', 'Bluetooth') 260px. */
@@ -434,10 +468,24 @@ body {
   font-size: 16px;
 }
 
+.filter_group {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 260px;
+}
+
 .filter_group_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+
+.select_container {
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  padding: 0 40px;
 }
 
 .select_container h2{
@@ -458,6 +506,20 @@ body {
   background-color: #ffffff;
 }
 
+.product_page_monopod ul {
+  display: flex;
+  width: 840px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.product_page_monopod ul:last-child {
+  width: 760px;
+  background-color: #f0f0f0;
+  margin: auto;
+}
+
 .product_card_title {
   font-family: "rubik", sans-serif;
   font-weight: 700;
@@ -472,6 +534,7 @@ body {
 
 .pagination_show-more_container {
   width: 760px;
+  margin: auto;
   height: 55px;
   text-align: center;
 }
