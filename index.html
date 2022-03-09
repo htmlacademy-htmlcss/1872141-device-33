@@ -7,46 +7,52 @@
   </head>
   <body>
     <header class="header_page">
-      <a class="link logo" href="#"><img src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
-      <ul class="header_user_menu">
-        <li class="header_search">
-          <form class="header_search_container" action="https://echo.htmlacademy.ru/">
-            <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
-            <button class="button search_button" type="submit">Найти</button>
-          </form>
-        </li>
-        <li><a class="link log_in" href="#">Войти</a></li>
-      </ul>
-      <ul class="navigation_user_list">
-        <li class="navigation_user_compare"><a class="link navigation_user" href="#">Сравнить</a></li>
-        <li class="navigation_user_basket"><a class="link navigation_user" href="#">Корзина</a></li>
-      </ul>
+      <a class="link logo" href="#"><img class="logo_image" src="images/logo_device_header.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a>
+      <div class="header_user_container">
+        <form class="header_search_container" action="https://echo.htmlacademy.ru/">
+          <input class="search_input" type="search" id="search_input" placeholder="Поиск по сайту">
+          <button class="button search_button" type="submit">Найти</button>
+        </form>
+        <a class="link log_in" href="#">Войти</a>
+        <ul class="navigation_user_list">
+          <li class="navigation_user_compare"><a class="link navigation_user" href="#">Сравнить</a></li>
+          <li class="navigation_user_basket"><a class="link navigation_user" href="#">Корзина</a></li>
+        </ul>
+      </div>
       <nav class="navigation_menu">
+        <div class="navigation_menu_container">
+          <a class="link catalog_link" href="catalog.html">Каталог товаров</a>
+        </div>
         <ul class="navigation_menu_list">
-          <li class="catalog_link"><a class="link" href="catalog.html">Каталог товаров</a></li>
-          <li class="navigation_menu_list"><a class="link" href="#">Доставка</a></li>
-          <li class="navigation_menu_list"><a class="link" href="#">Гарантия</a></li>
-          <li class="navigation_menu_list"><a class="link" href="#">Контакты</a></li>
+          <li class="navigation_menu_delivery"><a class="link" href="#">Доставка</a></li>
+          <li class="navigation_menu_guarantee"><a class="link" href="#">Гарантия</a></li>
+          <li class="navigation_menu_contacts"><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main_index">
-      <h1 class="visually-hidden">Интернет-магазин Device</h1>
+    <main class="main_page">
+      <!--
+        Как верстать класс visually-hidden будет объяснено после, поэтому прячу всё с этим классом,
+        при помощи hidden
+      -->
+      <h1 class="visually-hidden" hidden>Интернет-магазин Device</h1>
       <section class="main_slider">
-        <h2 class="visually-hidden">Слайдер с новинками интернет-магазина</h2>
+        <h2 class="visually-hidden" hidden>Слайдер с новинками интернет-магазина</h2>
         <div class="slider_indicator_container">
-          <button class="slider_indicator slider_indicator_current" type="button">
+          <button class="slider_indicator slider_indicator_current" type="button" hidden>
             <span class="visually-hidden">1</span>
           </button>
-          <button class="slider_indicator" type="button">
+          <button class="slider_indicator" type="button" hidden>
             <span class="visually-hidden">2</span>
           </button>
-          <button class="slider_indicator" type="button">
+          <button class="slider_indicator" type="button" hidden>
             <span class="visually-hidden">3</span>
           </button>
         </div>
         <ol class="slider_properties">
           <li class="slider_item">
+            <!-- Вёрстка стрелок отложена, т.к. он будет рассмотрен в программе обучения
+                   позже, а на данном этапе мешает правильно отобразить размеры слайда.
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -55,21 +61,28 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
+            -->
             <img class="slider_image_quadrocopter" src="images/slider/slider_1.png" width="560" height="560" alt="Квадрокоптер с лазером, замаскированным под камеру." >
+            <!-- Вёрстка номера отложена, т.к. это декоративный элемент и будет рассмотрен
+              в программе обучения позже.
             <span class="slider_number">01</span>
-            <div class="slider_item_quadrocopter">
-              <p class="slider_promo">Порхает как бабочка, жалит как пчела!</p>
-              <p class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            -->
+            <div class="slider_item_description_container">
+              <div class="slider_item_quadrocopter">
+                <p class="slider_promo">Порхает как бабочка, жалит как пчела!</p>
+                <p class="slider_text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              </div>
+              <a class="link slider_link_more" href="#">Подробнее</a>
+              <dl class="slider_properties_list">
+                <dt>800 м</dt>
+                <dd>Дальность полёта</dd>
+                <dt>50 м</dt>
+                <dd>Радиус поражения</dd>
+              </dl>
             </div>
-            <a class="link slider_link_more" href="#">Подробнее</a>
-            <dl class="slider_property_list">
-              <dt>800 м</dt>
-              <dd>Дальность полёта</dd>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-            </dl>
           </li>
           <li class="slider_item">
+            <!--
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -78,19 +91,25 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
+            -->
             <img class="slider_image_fitness-bracelet" src="images/slider/slider_2.png" width="560" height="560" alt="Мотивирующий фитнес-браслет черного цвета." >
+            <!--
             <span class="slider_number">02</span>
-            <div class="slider_item_fitness-bracelet">
-              <p class="slider_promo">Худеем правильно!</p>
-              <p class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            -->
+            <div class="slider_item_description_container">
+              <div class="slider_item_fitness-bracelet">
+                <p class="slider_promo">Худеем правильно!</p>
+                <p class="slider_text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              </div>
+              <a class="link slider_link_more" href="#">Подробнее</a>
+              <dl class="slider_properties_list">
+                <dt>48 часов</dt>
+                <dd>Без подзарядки</dd>
+             </dl>
             </div>
-            <a class="link slider_link_more" href="#">Подробнее</a>
-            <dl class="slider_property_list">
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
           </li>
           <li class="slider_item">
+            <!--
             <div class="slider_button_arrows">
               <button class="slider_button slider_prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
@@ -99,49 +118,54 @@
                 <span class="visually-hidden">Следующее фото</span>
               </button>
             </div>
+            -->
             <img class="slider_image_selfie-stick" src="images/slider/slider_3.png" width="560" height="560" alt="Чёрная телескопическая палка для селфи с ремешком." >
+            <!--
             <span class="slider_number">03</span>
-            <div class="slider_item_selfie-stick">
-              <p class="slider_promo">Делай селфи, как Бен Стиллер!</p>
-              <p class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            -->
+            <div class="slider_item_description_container">
+              <div class="slider_item_selfie-stick">
+                <p class="slider_promo">Делай селфи, как Бен Стиллер!</p>
+                <p class="slider_text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              </div>
+              <a class="link slider_link_more" href="#">Подробнее</a>
+              <dl class="slider_properties_list">
+                <dt>8,5 м</dt>
+                <dd>Длина палки</dd>
+                <dt>5 кг</dt>
+                <dd>Вес палки</dd>
+                <dt>Карбон</dt>
+                <dd>Материал</dd>
+              </dl>
             </div>
-            <a class="link slider_link_more" href="#">Подробнее</a>
-            <dl class="slider_property_list">
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
           </li>
         </ol>
       </section>
-      <section class="category_list">
-        <h2 class="visually-hidden">Категории товаров из каталога</h2>
-        <ul>
-          <li class="category_list_virtual-reality">
+      <section class="category_list_container">
+        <h2 class="visually-hidden" hidden>Категории товаров из каталога</h2>
+        <ul class="category_list">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="category_list_monopods">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Моноподы для селфи</a>
           </li>
-          <li class="category_list_action-cameras">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Экшн-камеры</a>
           </li>
-          <li class="category_list_fitness-bracelets">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Фитнес-браслеты</a>
           </li>
-          <li class="category_list_smart-watchs">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Умные часы</a>
           </li>
-          <li class="category_list_quadrocopters">
+          <li class="category_list_item">
             <a class="link category_link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       <section class="benefits">
-        <h2 class="visually hidden">Наши преимущества</h2>
+        <h2 class="visually-hidden" hidden>Наши преимущества</h2>
         <div class="benefits_buttons">
           <button class="button benefits_button benefits_button_current" type="button">Доставка</button>
           <button class="button benefits_button" type="button">Гарантия</button>
@@ -166,7 +190,7 @@
         <a class="link delivery" href="#">Доставим редкий товар под заказ</a>
       </div>
       <section class="about-shop">
-        <h2 class="visualy-hiden">Информация о магазине и контакты</h2>
+        <h2 class="visualy-hiden" hidden>Информация о магазине и контакты</h2>
         <div class="about-shop_about-us">
           <h3 class="about-us">О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -194,51 +218,64 @@
           <a class="link" href="">Напишите нам</a>
         </div>
       </section>
-      <aside class="mailing-list">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form class="mailing-list_form" action="https://echo.htmlacademy.ru/">
-          <input class="e-mail_input" type="email" placeholder="Ваш e-mail">
-          <button class="button email_button" type="submit">Подписаться</button>
-          <span>Это бесплатно</span>
-        </form>
-      </aside>
+      <aside class="mailing-list_background">
+        <div class="mailing-list">
+          <div class="mailing-list_container">
+            <h2>Подпишитесь на рассылку</h2>
+            <!--
+              Не могу понять, почему размер контейнера для тэга p и все свойства шрифта совпадают с макетом,
+              а при запуске сайта в браузере перенос строк в тексте не совпадает с макетом. Это из-за межсимвольного
+              интервала - Letter-spacing?
+            -->
+            <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
+          <form class="mailing-list_form" action="https://echo.htmlacademy.ru/">
+            <input class="e-mail_input" type="email" placeholder="Ваш e-mail">
+            <button class="button email_button" type="submit">Подписаться</button>
+            <span>Это бесплатно</span>
+          </form>
+        </div>
+       </aside>
     </main>
     <footer class="footer_page">
-      <section class="footer_address">
-        <h2 class="footer_logo"><a href="#"><img src="images/logo_device_footer.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a></h2>
-        <address class="contacts_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
-      </section>
-      <nav class="footer_navigation">
-        <ul class="footer_navigation_list">
-          <li class="footer_nav_list"><a class="link footer_link" href="#">Доставка</a></li>
-          <li class="footer_nav_list"><a class="link footer_link" href="#">Гарантия</a></li>
-          <li class="footer_nav_list"><a class="link footer_link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <section class="footer_social">
-        <h2 class="visually-hidden">Мы с социальных сетях</h2>
-        <ul class="footer_social_list">
-          <li class="footer_social_item">
-            <a class="link" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="footer_social_item">
-            <a class="link" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="footer_social_item">
-            <a class="link" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <div class="footer_other">
-        <a class="footer_phone contacts_phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="htmlacademy_link" href="https://htmlacademy.ru/"><img src="images/logo_html-academy.svg" width="115" height="33" alt="Логотип html-academy."></a>
+      <div class="footer_page_container">
+        <section class="footer_address">
+          <h2 class="footer_logo"><a href="#"><img src="images/logo_device_footer.svg" width="145" height="36" alt="Логотип интернет-магазина Device."></a></h2>
+          <address class="contacts_address_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+        </section>
+        <div class="footer_navigation-social_container">
+          <nav class="footer_navigation">
+            <ul class="footer_navigation_list">
+              <li class="footer_nav_list"><a class="link footer_link" href="#">Доставка</a></li>
+              <li class="footer_nav_list"><a class="link footer_link" href="#">Гарантия</a></li>
+              <li class="footer_nav_list"><a class="link footer_link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <section class="footer_social" hidden>
+            <h2 class="visually-hidden" hidden>Мы с социальных сетях</h2>
+            <ul class="footer_social_list">
+              <li class="footer_social_item">
+                <a class="link" href="#">
+                  <span class="visually-hidden" hidden>Фейсбук</span>
+                </a>
+              </li>
+              <li class="footer_social_item">
+                <a class="link" href="#">
+                  <span class="visually-hidden" hidden>Инстаграм</span>
+                </a>
+              </li>
+              <li class="footer_social_item">
+                <a class="link" href="#">
+                  <span class="visually-hidden" hidden>Твиттер</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer_other">
+          <a class="footer_phone contacts_phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+          <a class="htmlacademy_link" href="https://htmlacademy.ru/"><img src="images/logo_html-academy.svg" width="115" height="33" alt="Логотип html-academy."></a>
+        </div>
       </div>
     </footer>
   </body>
